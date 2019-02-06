@@ -27,13 +27,7 @@ def parsePage(pageNumber):
     project_det = soup.findAll('div', attrs={'class': 'html-desc project-details'})
     for each1 in project_det:
         proj = each1.text.strip().encode('utf-8')
-        #proj = each1.text.strip()
-        #print (project_det)
         project_col.append(proj)
-        #response = requests.get(next_page_link)
-
-    #title_col2 = np.transpose(title_col)
-    #project_col2 = np.transpose(project_col)
 
 #pagination
 
